@@ -1,0 +1,17 @@
+{
+  "type":"postgres",
+  "username":"postgres",
+  "password": "admin",
+ " host": "localhost",
+  "port": 5432,
+  "database": "HeroPlay",
+  "define":{
+      "underscored": true,
+      "timestamps": true
+  },
+  "migrations":["./src/database/migrations/**.ts"],
+  "entities": ["./src/entities/**.ts"],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
+}
